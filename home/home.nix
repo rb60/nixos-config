@@ -4,7 +4,7 @@
 		username = "tima";
 		homeDirectory = "/home/tima";
 		stateVersion = "25.05";
-		packages = with pkgs[ telegram-desktop ]
+		packages = [ pkgs.telegram-desktop ];
 	};
 
 	programs.bash = {
