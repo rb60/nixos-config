@@ -104,7 +104,7 @@
     pciutils
     vim
     home-manager
-    cura-appimage 
+    slic3r 
   #   wget
   ];
 
