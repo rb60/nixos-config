@@ -103,7 +103,8 @@
   environment.systemPackages = with pkgs; [
     pciutils
     vim
-    home-manager 
+    home-manager
+    cura 
   #   wget
   ];
 
