@@ -41,7 +41,7 @@
   networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
   networking.enableB43Firmware = true;
   nixpkgs.config.allowUnfree = true;
-  
+  nixpkgs.config.allowBroken = true;
   
 
   # Set your time zone.
