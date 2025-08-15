@@ -65,8 +65,8 @@
     displayManager.gdm.enable = true;
     desktopManager.gnome.enable = true;
     xkb.layout = "us,ua";
-    xkbVariant = ",";
-    xkbOptions = "grp:win_space_toggle";
+    xkb.variant = ",";
+    xkb.options = "grp:win_space_toggle";
   };
 
   
