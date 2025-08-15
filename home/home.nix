@@ -16,6 +16,7 @@
 
 	imports = [
 		./modules/git.nix
+		./modules/github.nix
 	];
 	
 	dconf.settings."org/gnome/desktop/wm/preferences".button-layout = "minimize,maximize,close";
