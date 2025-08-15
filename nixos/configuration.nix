@@ -104,7 +104,7 @@
     pciutils
     vim
     home-manager
-    cura 
+    cura-appimage 
   #   wget
   ];
 
