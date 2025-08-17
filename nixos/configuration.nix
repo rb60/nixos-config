@@ -58,6 +58,11 @@
   #   keyMap = "us";
   #   useXkbConfig = true; # use xkb.options in tty.
   # };
+  
+  fonts.packages = with pkgs; [
+    nerd-fonts.agave
+  ];
+
 
   # Enable the X11 windowing system.
   services.xserver = {
