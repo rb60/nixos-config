@@ -15,8 +15,8 @@
 				options = 
 				{
 					silent = true;
-				}
-			};
+				};
+			}
 		];
 	};
 }
