@@ -105,7 +105,8 @@
     pciutils
     vim
     home-manager
-    prusa-slicer 
+    prusa-slicer
+    dconf-editor
   #   wget
   ];
 
