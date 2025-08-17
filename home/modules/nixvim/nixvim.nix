@@ -10,7 +10,7 @@
 		clipboard.providers.xclip.enable = true;
 		keymaps = [
 			{
-				action = ":NvimTreeToggle";
+				action = ":NvimTreeToggle<Enter>";
 				key = "<C-n>";
 				options = 
 				{
