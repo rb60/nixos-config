@@ -8,5 +8,15 @@
 	{
 		enable = true;
 		clipboard.providers.xclip.enable = true;
+		keymaps = [
+			{
+				action = ":NvimTreeToggle";
+				key = "<C-n>";
+				options = 
+				{
+					silent = true;
+				}
+			}
+		];
 	};
 }
