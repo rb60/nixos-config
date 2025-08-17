@@ -2,7 +2,8 @@
 	imports = [ ./plugins/bufferline.nix 
 		    ./plugins/lualine.nix
 		    ./plugins/nvim_tree.nix
-		    ./plugins/web_devicons.nix ];
+		    ./plugins/web_devicons.nix 
+		    ./plugins/dashboard.nix];
 
 	programs.nixvim = 
 	{
