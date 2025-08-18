@@ -73,7 +73,7 @@
     xkb.options = "grp:win_space_toggle";
   };
 
-  
+  services.envfs.enable = true;
 
   # Configure keymap in X11
   # services.xserver.xkb.layout = "us";
