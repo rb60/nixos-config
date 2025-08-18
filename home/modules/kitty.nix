@@ -1,5 +1,5 @@
 {
-	progrmas.kitty = 
+	programs.kitty = 
 	{
 		enable = true;
 		font.name = "Agave Nerd Font 10";
