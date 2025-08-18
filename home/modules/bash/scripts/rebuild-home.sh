@@ -5,5 +5,5 @@ read COMMIT_NAME
 if [ "$COMMIT_NAME" != "" ]; then
 	git add .
 	git commit -m "$COMMIT_NAME"
-	sudo nixos-rebuild switch --flake /home/tima/nix/
+	home-manager switch --flake /home/tima/nix/
 fi
