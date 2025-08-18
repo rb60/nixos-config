@@ -4,7 +4,8 @@
 		    ./plugins/nvim_tree.nix
 		    ./plugins/web_devicons.nix 
 		    ./plugins/dashboard.nix
-		    ./plugins/toggleterm.nix];
+		    ./plugins/toggleterm.nix
+		    ./plugins/image.nix];
 
 	programs.nixvim = 
 	{
