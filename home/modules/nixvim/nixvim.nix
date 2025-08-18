@@ -3,7 +3,8 @@
 		    ./plugins/lualine.nix
 		    ./plugins/nvim_tree.nix
 		    ./plugins/web_devicons.nix 
-		    ./plugins/dashboard.nix];
+		    ./plugins/dashboard.nix
+		    ./plugins/toggleterm.nix];
 
 	programs.nixvim = 
 	{
