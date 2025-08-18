@@ -25,7 +25,7 @@
     				};
     				shortcut = [
 					{
-						desc = "Files[f]";
+						desc = "Files";
 						action = "NvimTreeToggle";
 						key = "f";
 					}
