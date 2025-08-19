@@ -13,7 +13,7 @@
 		./modules/github.nix
 		./modules/nixvim/nixvim.nix
 		./modules/bash/bash.nix
-		./modules/kitty.nix
+		./modules/kitty/kitty.nix
 	];
 	
 	dconf.settings."org/gnome/desktop/wm/preferences".button-layout = "minimize,maximize,close";
