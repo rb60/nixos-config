@@ -4,6 +4,6 @@
 		enable = true;
 		font.name = "Agave Nerd Font 10";
 		shellIntegration.enableBashIntegration = true;
-		themeFile = "/home/tima/Downloads/pink_lavender";
+		themeFile = "pink_lavender";
 	};
 }

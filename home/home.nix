@@ -6,7 +6,7 @@
 		stateVersion = "25.05";
 		packages = [ 
 			pkgs.telegram-desktop 
-			pkgs.unstable.kitty-themes];
+			pkgs.kitty-themes];
 	};
 
 	
