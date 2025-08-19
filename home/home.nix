@@ -6,7 +6,8 @@
 		stateVersion = "25.05";
 		packages = [ 
 			pkgs.telegram-desktop 
-			pkgs.kitty-themes];
+			pkgs.kitty-themes
+			pkgs.freecad];
 	};
 
 	
