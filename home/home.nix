@@ -4,7 +4,9 @@
 		username = "tima";
 		homeDirectory = "/home/tima";
 		stateVersion = "25.05";
-		packages = [ pkgs.telegram-desktop ];
+		packages = [ 
+			pkgs.telegram-desktop 
+			pkgs.unstable.kitty-themes];
 	};
 
 	
