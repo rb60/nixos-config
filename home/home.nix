@@ -7,7 +7,8 @@
 		packages = [ 
 			pkgs.telegram-desktop 
 			pkgs.kitty-themes
-			pkgs.freecad];
+			pkgs.freecad
+			pkgs.gajim];
 	};
 
 	
