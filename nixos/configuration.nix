@@ -112,6 +112,7 @@
     home-manager
     prusa-slicer
     dconf-editor
+    python3
   #   wget
   ];
 
