@@ -129,6 +129,7 @@
     python3
     zoom-us
     discord
+    qbittorrent
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
