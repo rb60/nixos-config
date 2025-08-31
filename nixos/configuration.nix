@@ -113,7 +113,7 @@
     prusa-slicer
     dconf-editor
     python3
-    zoom
+    zoom-us
     obs-studio
     discord
   ];
