@@ -115,6 +115,7 @@
     python3
     zoom-us
     obs-studio
+    obs-pipewire-audio-capture
     discord
   ];
 
