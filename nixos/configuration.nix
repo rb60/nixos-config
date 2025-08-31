@@ -119,7 +119,11 @@
     python3
     zoom-us
     obs-studio
-    obs-studio-plugins.obs-pipewire-audio-capture
+    (wrapOBS {
+      plugins = with pkgs.obs-studio-plugins [
+         obs-pipewire-audio-capture
+      ]
+    })
     discord
   ];
 
