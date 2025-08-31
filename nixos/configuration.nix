@@ -22,7 +22,8 @@
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-
+  powerManagement.enable = true;
+  
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   nix.gc = {
