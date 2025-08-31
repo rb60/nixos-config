@@ -110,6 +110,16 @@
 
   # List packages installed in system profile.
   # You can use https://search.nixos.org/ to find more packages (and options).
+
+  programs.obs-studio = {
+    enable = true;
+
+    plugins = with pkgs.obs-studio-plugins; [
+      obs-pipewire-audio-capture
+    ];
+  };
+
+
   environment.systemPackages = with pkgs; [
     pciutils
     vim
@@ -118,12 +128,6 @@
     dconf-editor
     python3
     zoom-us
-    obs-studio
-    (wrapOBS {
-      plugins = with pkgs.obs-studio-plugins [
-         obs-pipewire-audio-capture
-      ];
-    })
     discord
   ];
 
