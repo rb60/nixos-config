@@ -113,7 +113,9 @@
     prusa-slicer
     dconf-editor
     python3
-  #   wget
+    zoom
+    obs-studio
+    discord
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
