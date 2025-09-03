@@ -6,7 +6,9 @@
 		    ./plugins/dashboard.nix
 		    ./plugins/toggleterm.nix
 		    ./plugins/image.nix
-		    ./plugins/treesitter.nix];
+		    ./plugins/treesitter.nix
+		    ./lsp/nixd.nix
+		    ./lsp/pyslp.nix];
 
 	programs.nixvim = 
 	{
