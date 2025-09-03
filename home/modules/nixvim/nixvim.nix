@@ -6,7 +6,6 @@
 		    ./plugins/dashboard.nix
 		    ./plugins/toggleterm.nix
 		    ./plugins/image.nix
-		    ./plugins/treesitter.nix
 		    ./plugins/cmp.nix
 		    ./plugins/lsp/lsp.nix];
 
