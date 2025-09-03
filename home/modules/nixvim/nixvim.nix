@@ -8,7 +8,7 @@
 		    ./plugins/image.nix
 		    ./plugins/treesitter.nix
 		    ./lsp/nixd.nix
-		    ./lsp/pyslp.nix];
+		    ./lsp/pylsp.nix];
 
 	programs.nixvim = 
 	{
