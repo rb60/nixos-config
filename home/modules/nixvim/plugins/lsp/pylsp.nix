@@ -1,5 +1,5 @@
 {
-	programs.nixvim.plugins.lspconfig.servers.pylsp = 
+	programs.nixvim.plugins.lsp.servers.pylsp = 
 	{
 		enable = true;
 	};

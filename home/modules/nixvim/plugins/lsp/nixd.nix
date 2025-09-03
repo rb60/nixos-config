@@ -1,5 +1,5 @@
 {
-	programs.nixvim.plugins.lspconfig.servers.nixd = 
+	programs.nixvim.plugins.lsp.servers.nixd = 
 	{
 		enable = true;
 	};
