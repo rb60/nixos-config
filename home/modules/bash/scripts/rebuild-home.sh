@@ -6,4 +6,5 @@ if [ "$COMMIT_NAME" != "" ]; then
 	git add .
 	git commit -m "$COMMIT_NAME"
 	home-manager switch --flake /home/tima/nix/
+	git push
 fi

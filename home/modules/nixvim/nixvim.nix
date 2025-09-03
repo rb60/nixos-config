@@ -5,7 +5,8 @@
 		    ./plugins/web_devicons.nix 
 		    ./plugins/dashboard.nix
 		    ./plugins/toggleterm.nix
-		    ./plugins/image.nix];
+		    ./plugins/image.nix
+		    ./plugins/treesitter.nix];
 
 	programs.nixvim = 
 	{
