@@ -133,6 +133,7 @@
     zoom-us
     discord
     qbittorrent
+    libgccjit    
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
