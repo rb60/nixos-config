@@ -4,7 +4,7 @@
 		enable = true;
 		settings = 
 		{
-			ensure_installed = "all";
+			ensure_installed = ["nix" "python"];
 			highlight.enable = true;
   			incremental_selection.enable = true;
   			indent.enable = true;
