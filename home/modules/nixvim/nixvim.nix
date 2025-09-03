@@ -13,6 +13,7 @@
 	programs.nixvim = 
 	{
 		enable = true;
+		plugins.cmp-nvim-lsp.enable = true;
 		clipboard.providers.xclip.enable = true;
 		keymaps = [
 			{
