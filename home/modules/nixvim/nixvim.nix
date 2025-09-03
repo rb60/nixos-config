@@ -7,6 +7,7 @@
 		    ./plugins/toggleterm.nix
 		    ./plugins/image.nix
 		    ./plugins/treesitter.nix
+		    ./plugins/cmp.nix
 		    ./lsp/nixd.nix
 		    ./lsp/pylsp.nix];
 
