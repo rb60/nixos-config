@@ -4,7 +4,7 @@
 		enable = true;
 		settings.plugins =
 		{
-			rope.enable = true;
+			rope.enabled = true;
 		};
 	};
 }
