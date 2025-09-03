@@ -8,8 +8,8 @@
 		    ./plugins/image.nix
 		    ./plugins/treesitter.nix
 		    ./plugins/cmp.nix
-		    ./lsp/nixd.nix
-		    ./lsp/pylsp.nix];
+		    ./plugins/lsp/lsp.nix];
+
 
 	programs.nixvim = 
 	{
