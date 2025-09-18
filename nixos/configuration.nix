@@ -136,6 +136,7 @@
     libgccjit    
     clang
     libreoffice
+    openshot-qt
     ];
 
   # Some programs need SUID wrappers, can be configured further or are
