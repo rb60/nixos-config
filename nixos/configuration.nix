@@ -137,6 +137,7 @@
     clang
     libreoffice
     openshot-qt
+    anydesk
     ];
 
   # Some programs need SUID wrappers, can be configured further or are
