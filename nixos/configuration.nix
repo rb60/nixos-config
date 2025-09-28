@@ -138,6 +138,7 @@
     libreoffice
     openshot-qt
     anydesk
+    radarr
     ];
 
   # Some programs need SUID wrappers, can be configured further or are
