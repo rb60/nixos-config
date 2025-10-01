@@ -138,7 +138,6 @@
     libreoffice
     openshot-qt
     anydesk
-    jellyfin
     ];
 
   # Some programs need SUID wrappers, can be configured further or are
