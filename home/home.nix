@@ -8,13 +8,15 @@
 			pkgs.telegram-desktop 
 			pkgs.kitty-themes
 			pkgs.freecad
-			pkgs.gajim];
+			pkgs.gajim
+			pkgs.qbittorrent];
 	};
 
 	
 	imports = [
 		./modules/git.nix
 		./modules/github.nix
+		./modules/qbittorrentservice.nix
 		./modules/nixvim/nixvim.nix
 		./modules/bash/bash.nix
 		./modules/kitty/kitty.nix
