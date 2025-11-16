@@ -98,6 +98,8 @@
     wireplumber.enable = true;
   };
 
+  
+
   # Enable touchpad support (enabled default in most desktopManager).
   # services.libinput.enable = true;
 
@@ -140,6 +142,20 @@
     openshot-qt
     anydesk
     ];
+
+  systemd.services.qbittorrent =
+  {
+  	enable = true;
+	description = "QBitTorrent";
+	serviceConfig = {
+		execStart = "${pkgs.qbittorrent}/bin/qbittorrent";
+	};
+	unitConfig = {
+		Type = "simple";
+	};
+	wantedBy = ["multi-user.target"];
+  };
+
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
