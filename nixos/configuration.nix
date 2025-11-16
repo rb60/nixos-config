@@ -151,11 +151,13 @@
 	serviceConfig = {
 		execStart = "${pkgs.qbittorrent}/bin/qbittorrent";
 		RemainAfterExit = true;
+		PassEnvironment = "DISPLAY";
 	};
 	unitConfig = {
 		Type = "simple";
 	};
-	wantedBy = ["multi-user.target"];
+	wantedBy = ["graphical-session.target"];
+	partOf = ["graphical-session.target"];
   };
 
 
