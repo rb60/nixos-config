@@ -30,9 +30,8 @@
 
 		Service = {
 			ExecStartPre = pkgs.writeShellScript "wait-for-mount" ''
-			until [-e "/run/media/tima/Elements"]
+			until [ -d "/run/media/tima/Elements" ]
 			do
-				ls -l /run/media/tima/ 2>&1 || echo "Path /run/media/tima/ not found"
 				sleep 2
 			done
 			'';
