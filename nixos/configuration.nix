@@ -143,7 +143,7 @@
     anydesk
     ];
 
-  systemd.services.qbittorrent =
+  systemd.user.services.qbittorrent =
   {
   	enable = true;
 	description = "QBitTorrent";
