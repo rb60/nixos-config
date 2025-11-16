@@ -29,7 +29,7 @@
 		};
 
 		Service = {
-			ExecStartPre = "${pkgs.coreutils}/bin/sleep 5"
+			ExecStartPre = "${pkgs.coreutils}/bin/sleep 5";
 			ExecStart = "${pkgs.qbittorrent}/bin/qbittorrent";
 			Restart = "on-failure";
 		};
