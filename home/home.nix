@@ -29,7 +29,11 @@
 		};
 
 		Service = {
-			ExecStartPre = "${pkgs.coreutils}/bin/sleep 5";
+			ExecStartPre = pkgs.writeShellScript "wait-for-mount" ''
+			until [-d "/run/media/tima/Elements/Movies"]; do
+				sleep 2
+			done
+			'';
 			ExecStart = "${pkgs.qbittorrent}/bin/qbittorrent";
 			Restart = "on-failure";
 		};
