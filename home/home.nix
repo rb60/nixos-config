@@ -24,7 +24,7 @@
 	systemd.user.services.qbittorrent = {
 		Unit = {
 			Description = "qBitTorrent";
-			After = ["graphical-session-pre.target"];
+			After = ["graphical-session-pre.target" "run-media-tima-Elements.mount"];
 			PartOf = ["graphical-session.target"];
 		};
 
