@@ -143,22 +143,7 @@
     anydesk
     ];
 
-  systemd.user.services.qbittorrent =
-  {
-  	enable = true;
-	description = "QBitTorrent";
-	path = [pkgs.qbittorrent];
-	serviceConfig = {
-		execStart = "${pkgs.qbittorrent}/bin/qbittorrent";
-		RemainAfterExit = true;
-		PassEnvironment = "DISPLAY";
-	};
-	unitConfig = {
-		Type = "simple";
-	};
-	wantedBy = ["graphical-session.target"];
-	partOf = ["graphical-session.target"];
-  };
+  
 
 
   # Some programs need SUID wrappers, can be configured further or are
