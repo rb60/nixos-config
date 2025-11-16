@@ -34,6 +34,7 @@
 			do
 				sleep 2
 			done
+			sleep 15
 			'';
 			ExecStart = "${pkgs.qbittorrent}/bin/qbittorrent";
 			Restart = "on-failure";
