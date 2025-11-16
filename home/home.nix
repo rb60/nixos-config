@@ -30,7 +30,7 @@
 
 		Service = {
 			ExecStartPre = pkgs.writeShellScript "wait-for-mount" ''
-			until [-d "/run/media/tima/Elements/Movies"]; do
+			until [-d "/run/media/tima/Elements/Movies/"]; do
 				sleep 2
 			done
 			'';
