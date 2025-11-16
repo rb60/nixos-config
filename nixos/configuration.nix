@@ -147,8 +147,10 @@
   {
   	enable = true;
 	description = "QBitTorrent";
+	path = [pkgs.qbittorrent];
 	serviceConfig = {
 		execStart = "${pkgs.qbittorrent}/bin/qbittorrent";
+		RemainAfterExit = true;
 	};
 	unitConfig = {
 		Type = "simple";
