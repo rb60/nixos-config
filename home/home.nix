@@ -16,11 +16,28 @@
 	imports = [
 		./modules/git.nix
 		./modules/github.nix
-		./modules/qbittorrentservice.nix
 		./modules/nixvim/nixvim.nix
 		./modules/bash/bash.nix
 		./modules/kitty/kitty.nix
 	];
+
+	systemd.user.services.qbittorrent = {
+		Unit = {
+			Description = "qBitTorrent";
+			After = ["graphical-session-pre.target"];
+			PartOf = ["graphical-session.target"];
+		};
+
+		Service = {
+			ExecStart = "${pkgs.qbittorrent}/bin/qbittorrent";
+			Restart = "on-failure";
+		};
+
+		Install = {
+			WantedBy = ["graphical-session.target"];
+		};
+	};
+
 	
 	dconf.settings."org/gnome/desktop/wm/preferences".button-layout = "minimize,maximize,close";
 	dconf.settings."org/gnome/Console" = 
