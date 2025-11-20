@@ -9,7 +9,8 @@
 			pkgs.kitty-themes
 			pkgs.freecad
 			pkgs.gajim
-			pkgs.qbittorrent];
+			pkgs.qbittorrent
+			pkgs.anydesk];
 	};
 
 	
@@ -44,6 +45,25 @@
 			WantedBy = ["graphical-session.target"];
 		};
 	};
+
+
+	systemd.user.services.anyDesk = {
+		Unit = {
+			Description = "AnyDesk";
+			After = ["network-online.target"];
+			PartOf = ["network-online.target"];
+		};
+
+		Service = {
+			ExecStart = "${pkgs.anydesky}/bin/anydesk";
+			Restart = "on-failure";
+		};
+
+		Install = {
+			WantedBy = ["network-online.target"];
+		};
+	};
+
 
 	
 	dconf.settings."org/gnome/desktop/wm/preferences".button-layout = "minimize,maximize,close";
