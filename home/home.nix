@@ -53,17 +53,12 @@
 	systemd.user.services.anyDesk = {
 		Unit = {
 			Description = "AnyDesk";
-			After = ["graphical-session.target"];
-			PartOf = ["graphical-session.target"];
+			After = ["network-online.target"];
 		};
 
 		Service = {
 			ExecStart = "${pkgs.anydesk}/bin/anydesk";
 			Restart = "on-failure";
-		};
-
-		Install = {
-			WantedBy = ["graphical-session.target"];
 		};
 	};
 
