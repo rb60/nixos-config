@@ -124,7 +124,7 @@
     ];
   };
 
-
+  
   environment.systemPackages = with pkgs; [
     pciutils
     vim
@@ -141,6 +141,8 @@
     openshot-qt
     anydesk
     ];
+  
+  services.anydesk.enable = true;
 
   
 

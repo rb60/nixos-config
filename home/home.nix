@@ -50,23 +50,6 @@
 	};
 
 
-	systemd.user.services.anyDesk = {
-		Unit = {
-			Description = "AnyDesk";
-			After = ["network-online.target" "graphical.target"];
-			PartOf = ["network-online.target"];
-		};
-
-		Service = {
-			ExecStart = "${pkgs.anydesk}/bin/anydesk";
-			Restart = "on-failure";
-		};
-		Install = {
-			WantedBy = ["network-online.target"];
-		};
-	};
-
-
 	
 	dconf.settings."org/gnome/desktop/wm/preferences".button-layout = "minimize,maximize,close";
 	dconf.settings."org/gnome/Console" = 
