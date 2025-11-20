@@ -1,5 +1,6 @@
 { config, pkgs, ...}:
 {
+	
 	home = {
 		username = "tima";
 		homeDirectory = "/home/tima";
