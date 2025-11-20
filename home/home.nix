@@ -60,6 +60,9 @@
 			ExecStart = "${pkgs.anydesk}/bin/anydesk";
 			Restart = "on-failure";
 		};
+		Install = {
+			WantedBy = ["network.target"];
+		};
 	};
 
 
