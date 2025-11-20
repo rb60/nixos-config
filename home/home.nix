@@ -55,7 +55,7 @@
 		};
 
 		Service = {
-			ExecStart = "${pkgs.anydesky}/bin/anydesk";
+			ExecStart = "${pkgs.anydesk}/bin/anydesk";
 			Restart = "on-failure";
 		};
 
