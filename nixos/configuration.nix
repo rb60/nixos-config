@@ -142,7 +142,16 @@
     anydesk
     ];
   
-  services.anydesk.enable = true;
+  systemd.services.anydesk = {
+    description = "AnyDesk Service";
+    after = [ "network.target" "systemd-user-sessions.service" ];
+    wantedBy = [ "multi-user.target" ];
+    serviceConfig = {
+      Type = "simple";
+      ExecStart = "${pkgs.anydesk}/bin/anydesk --service"; # Важливий момент
+      Restart = "on-failure";
+    };
+  };
 
   
 
