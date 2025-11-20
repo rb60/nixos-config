@@ -54,6 +54,7 @@
 		Unit = {
 			Description = "AnyDesk";
 			After = ["network-online.target" "graphical.target"];
+			PartOf = ["network-online.target"];
 		};
 
 		Service = {
