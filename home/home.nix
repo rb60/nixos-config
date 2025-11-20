@@ -53,8 +53,8 @@
 	systemd.user.services.anyDesk = {
 		Unit = {
 			Description = "AnyDesk";
-			After = ["network-online.target"];
-			PartOf = ["network-online.target"];
+			After = ["graphical-session.target"];
+			PartOf = ["graphical-session.target"];
 		};
 
 		Service = {
@@ -63,7 +63,7 @@
 		};
 
 		Install = {
-			WantedBy = ["network-online.target"];
+			WantedBy = ["graphical-session.target"];
 		};
 	};
 
