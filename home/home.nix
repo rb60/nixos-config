@@ -53,7 +53,7 @@
 	systemd.user.services.anyDesk = {
 		Unit = {
 			Description = "AnyDesk";
-			After = ["network.target"];
+			After = ["network-online.target" "graphical.target"];
 		};
 
 		Service = {
@@ -61,7 +61,7 @@
 			Restart = "on-failure";
 		};
 		Install = {
-			WantedBy = ["network.target"];
+			WantedBy = ["network-online.target"];
 		};
 	};
 
