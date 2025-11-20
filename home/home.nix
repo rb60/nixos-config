@@ -53,7 +53,7 @@
 	systemd.user.services.anyDesk = {
 		Unit = {
 			Description = "AnyDesk";
-			After = ["network-online.target"];
+			After = ["network.target"];
 		};
 
 		Service = {
