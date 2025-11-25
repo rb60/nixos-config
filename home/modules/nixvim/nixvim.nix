@@ -26,7 +26,7 @@
 			}
 			{
 				action = ":BufferLineCycleNext<Enter>";
-				key = "<C-S-Right>";
+				key = "<S-C-Right>";
 				options = 
 				{
 					silent = true;
@@ -34,7 +34,7 @@
 			}
 			{
 				action = ":BufferLineCyclePrev<Enter>";
-				key = "<C-S-Left>";
+				key = "<S-C-Left>";
 				options = 
 				{
 					silent = true;
