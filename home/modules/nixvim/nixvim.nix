@@ -24,23 +24,6 @@
 					silent = true;
 				};
 			}
-			{
-				action = ":BufferLineCycleNext<Enter>";
-				key = "<C-S-\>>";
-				options = 
-				{
-					silent = true;
-				};
-			}
-			{
-				action = ":BufferLineCyclePrev<Enter>";
-				key = "<C-S-\<>";
-				options = 
-				{
-					silent = true;
-				};
-
-			}
 			];
 
 		diagnostic.settings = {
