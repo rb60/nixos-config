@@ -25,7 +25,7 @@
 				};
 			}
 			{
-				action = ":BufferLineCycleNext";
+				action = ":BufferLineCycleNext<Enter>";
 				key = "<C-Right>";
 				options = 
 				{
@@ -33,7 +33,7 @@
 				};
 			}
 			{
-				action = ":BufferLineCyclePrev";
+				action = ":BufferLineCyclePrev<Enter>";
 				key = "<C-Left>";
 				options = 
 				{
