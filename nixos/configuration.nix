@@ -166,7 +166,8 @@
     libreoffice
     openshot-qt
     anydesk
-    motrix];
+    motrix
+    vdhcoapp];
   
   systemd.services.anydesk = {
     description = "AnyDesk Service";
