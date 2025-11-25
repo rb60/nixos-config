@@ -26,7 +26,7 @@
 			}
 			{
 				action = ":BufferLineCycleNext<Enter>";
-				key = "<Tab-Right>";
+				key = "<C-S-Right>";
 				options = 
 				{
 					silent = true;
@@ -34,20 +34,20 @@
 			}
 			{
 				action = ":BufferLineCyclePrev<Enter>";
-				key = "<Tab-Left>";
+				key = "<C-S-Left>";
 				options = 
 				{
 					silent = true;
 				};
 
 			}
-		];
+			];
 
 		diagnostic.settings = {
 			virtual_lines = {
 				current_line = true;
-		  	};
-		  	virtual_text = false;
+			};
+			virtual_text = false;
 		};
 
 	};
