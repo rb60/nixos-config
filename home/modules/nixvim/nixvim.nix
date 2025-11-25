@@ -24,6 +24,23 @@
 					silent = true;
 				};
 			}
+			{
+				action = ":BufferLineCycleNext";
+				key = "<C-Right>";
+				options = 
+				{
+					silent = true;
+				};
+			}
+			{
+				action = ":BufferLineCyclePrev";
+				key = "<C-Left>";
+				options = 
+				{
+					silent = true;
+				};
+
+			}
 		];
 
 		diagnostic.settings = {
