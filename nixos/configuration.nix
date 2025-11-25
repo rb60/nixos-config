@@ -110,7 +110,26 @@
 
 
 
-  programs.firefox.enable = true;
+  programs.firefox = {
+  	enable = true;
+	policies.ExtensionSettings = 
+	{
+		"{9ce99d37-4a5e-409a-a04b-0f3f50491bc7}" = 
+		{
+			install_url = "https://addons.mozilla.org/firefox/downloads/latest/motrixwebextension/latest.xpi";
+			installation_mode = "normal_installed";
+			private_browsing = true;
+		};
+		"adguardadblocker@adguard.com" =
+		{
+			install_url = "https://addons.mozilla.org/firefox/downloads/latest/adguard-adblocker/latest.xpi";
+			installation_mode = "normal_installed";
+			private_browsing = true;
+
+		};
+
+	};
+  };
   programs.steam.enable = true;
 
   # List packages installed in system profile.
